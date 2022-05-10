@@ -1,0 +1,18 @@
+panel %1
+
+restore bin/mem_test.save
+
+echo - - - - - - - - - - - - - - - - - - - - - - -
+echo
+echo Memory address/address compliment test
+echo
+echo This test was used for initial memory 
+echo testing. It writes and verifies data=address 
+echo followed by data=compliment of address for
+echo all memory locations up to 32K words.
+echo
+echo - - - - - - - - - - - - - - - - - - - - - - -
+
+g 0
+
+

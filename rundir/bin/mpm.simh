@@ -1,0 +1,30 @@
+; mpm - dcc mulipatern memory test
+; 
+
+; enable the panel
+
+panel %1
+
+; restore the simh saved state
+
+;restore bin/mpm.save
+
+echo
+echo - - - - - - - - - - - - - - - - - - - - - - - - - 
+echo MPM - DCC Multipattern Memory Test
+echo
+echo Obtained from paper tape in the year 1976
+echo
+echo When prompted "MAGNETIC OR SEMICONDUCTOR MEMORY?"
+echo Type M
+echo When prompted "ARE 4K BOARDS UNDER TEST?"
+echo Type N then press enter.
+echo
+echo ^E interrupts the simulator
+echo - - - - - - - - - - - - - - - - - - - - - - - - - 
+echo
+
+; start execution at location 1
+
+g 1
+

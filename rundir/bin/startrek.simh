@@ -1,0 +1,32 @@
+; 
+; 
+
+; enable the panel
+
+;panel d116.conf
+;panel nova1200.conf
+panel %1
+
+; restore the simh saved state
+
+restore bin/startrek.save
+
+echo
+echo - - - - - - - - - - - - - - - - - - - - -
+echo Startrek II 
+echo
+echo Running in DCC basic. 
+echo Obtained from paper tape in the year 1976
+echo
+echo Press keyboard caps lock on and type RUN
+echo
+echo Escape interrupts basic
+echo ^E interrupts the simulator
+echo - - - - - - - - - - - - - - - - - - - - -
+echo
+
+; start execution at location 3 which is
+; the DCC basic non-destructive restart address
+
+g 3
+
