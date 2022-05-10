@@ -1,0 +1,6 @@
+#!/bin/bash
+export LD_LIBRARY_PATH=../../lib
+
+../BIN/nova bin/mem_test.simh d116/d116.conf
+
+
