@@ -1,0 +1,91 @@
+
+THIS IS A SUBSET OF THE FP 2.0 PROJECT FOCUSED ON THE DG NOVA EMULATOR PORT
+
+
+Abstract from the "FrontPanel 2.0" README
+-----------------------------------------
+
+   Copyright (c) 2007-2008, John Kichury
+
+   This software and documentation is freely distributable free of charge and 
+   without license fees with the following conditions:
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+   JOHN KICHURY BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+   The above copyright notice and conditions must be included in any copies 
+   of this software.
+
+   -------------------------------------------------
+   Additional copyright and restrictions information
+   -------------------------------------------------
+
+   The following lists the programs and content included in this project that was not
+   created by the author of FrontPanel, and may be subject to restrictions.
+
+
+    1. Simh 
+
+            The Computer History Simulation Project (http://simh.trailing-edge.com/)
+            Consult the above web-site and/or the source files in the nova and altair
+            directories for legal information and/or restrictions.
+
+    2. (...)
+
+
+    3. Image content used for system front panels
+
+            Altair 8800 images obtained from http://www.digibarn.com/, and available under the
+	    Creative Commons license detailed at http://www.digibarn.com/notice/notice.cc.html
+
+            DG Nova 3 front panel image obtained from http://www.dvq.com, and available under
+	    Creative Commons license detailed at http://creativecommons.org/licenses/by/2.5/
+
+	    
+    4. jpeg image file reading code obtained from the Independent JPEG Group at http://www.ijg.org/
+
+   -------------------------------------------------
+
+
+Description:
+-----------
+The FrontPanel project is intended to be a contribution for assisting in the preservation of
+computer history.  It is a library for dynamically simulating the physical appearance of 
+the front panel on historic computers.  It has methods for describing lights, switches, 
+graphics elements for obtaining realistic physical appearances, and a programming interface for 
+integration into a computer simulation program.
+
+For detailed technical information please consult the user manual in the doc/ subdirectory.
+
+This directory contains the source code for FrontPanel and examples using  
+modified versions of simh for simulating the Data General Nova 1200, Nova3, Digital Computer Controls D-116.
+
+OpenGL hardware acceleration is required.
+The behavior of the lights on the front panels will be realistic.
+
+
+Running the examples:
+--------------------
+  To run the examples, cd into the respective run directory and invoke the run script of your choice.
+  Each example will result in a graphics window to be opened displaying the system, and the 
+  console output will appear in the shell window from which you invoked the simulator. Quitting 
+  the simulation can be accomplished by typing control-E (which is the default interrupt in simh),
+  then typing 'quit'.
+
+
+	  DG Nova 1200, DG Nova 3, DCC D-116 systems
+	  -----------------------------------------
+	  cd nova/rundir
+	  consult the README file in there.
+	  Invoke the run_* script of your choosing.
+
+ 
+
+contact: jjk439 at gmail dot com
+
+ -- end --
+
