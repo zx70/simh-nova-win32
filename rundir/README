@@ -1,0 +1,45 @@
+
+The contents of this directory consist of the run files
+for simulating the Data General Nova 1200, Nova 3, and the
+Digital Computer Controls (DCC) D-116 which was a Nova clone
+in the 1970s.  All simulations use the 'nova' version of the
+simh simulator (simh.trailing-edge.com) which is modified to
+use the FrontPanel library.
+
+Descriptions of the files and directories are as follows:
+
+README
+
+run_dcc_mpm*
+
+   - run script for invoking the DCC D-116 and loading the multipattern 
+     memory test.
+
+run_dcc_startrek*
+
+   - run script for invoking the DCC D-116 and executing the Startrek game
+     using DCC basic.
+
+run_nova1200_memtest*
+
+   - run script for invoking the Nova 1200 and executing a memory address/address complement
+     memory diagnostic.
+
+run_nova1200_startrek*
+
+   - run script for invoking the Nova 1200 and executing the Startrek game
+     using DCC basic.
+
+run_nova3_memtest*
+
+   - run script for invoking the Nova 3 and executing a memory address/address complement
+     memory diagnostic.
+
+
+Directories
+
+bin/			- simh saved state files and simh command sequences for each of the above run scripts
+d116/			- configuration files for the DC D-116 front panel
+nova1200/		- configuration files for the DG Nova 1200 front panel
+nova3/			- configuration files for the DG Nova 3 front panel
+
